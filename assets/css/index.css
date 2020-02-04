@@ -1,0 +1,99 @@
+/* ---------------------layout from w3schools--------------------- */
+  * {
+    box-sizing: border-box;
+  }  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /* Style the side navigation */
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    text-align:center;
+    display: none;
+  } 
+  /* Side navigation links */
+  .sidenav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+  } 
+  /* Change color on hover */
+  .sidenav a:hover {
+    background-color: #ddd;
+    color: black;
+  } 
+  /* Style the content */
+  .content {
+    /* margin-left: 200px; */
+    padding-left: 20px;
+    text-align: center;
+  }
+  .template {
+    width: 90%;
+    height: auto;
+    display: inline-block;
+  }
+/* ---------------------tables--------------------- */
+  table, th, td {
+    margin: auto;
+    border: 1px solid black;
+  }
+/* ---------------------form--------------------- */
+  input[type=text], input[type=number], input[type=date], input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  .alertForm {
+    padding: 10px;
+    background-color: goldenrod;
+    color: white;
+    display: none;
+  }
+  .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+  }   
+  .closebtn:hover {
+      color: black;
+  }

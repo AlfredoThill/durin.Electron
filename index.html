@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/index.css">
+  </head>
+  <body>
+
+    <div class="sidenav">
+      <h2 style="color:white">Operaciones</h2>
+      <a><button id="show-tables">Ver Tablas</button></a>
+      <a><button id="insert-form">Insertar Entrada</button></a>
+      <a><button id="select-form">Select * from ?</button></a>
+      <a><button id="select-where-form">Select w/ Where</button></a>
+      <a><button id="update-form">Update One</button></a>
+      <a><button id="delete-form">Delete One</button></a>
+    </div>
+
+    <div class="content">
+      <h2>¡Bienvenido!</h2>
+      <p>Modelo inicial de aplicación de escrito para CRUD sobre MySQL.</p>
+      <hr align="center" width="90%">
+      <div id="template" class="template">
+        <div class='template'>
+          <h2>Inicio de Sesión</h2>
+          <form id="login-form" onsubmit='stopLogInform(event)'>
+              
+              <label for="user">Usuario</label>
+              <input class="form-input" type="text" id="user" name="user" required>
+      
+              <label for="pwd">Contraseña</label>
+              <input class="form-input" type="password" id="pwd" name="password" required>
+       
+              <div class="alertForm" id="formWarning">
+                <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span> 
+                Las credenciales son inválidas.
+              </div>
+
+              <input type="submit" value="Submit">
+          </form>
+      </div> 
+      </div>
+    </div>
+  
+  </body>
+  <script src='./assets/view-handler.js'></script>
+  <script src='./render/query.js'></script>
+  <script src='./render/auth.js'></script>
+  </script>
+</html>
+    

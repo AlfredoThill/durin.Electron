@@ -1,0 +1,17 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "MyFirstElectron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "electron": "^7.1.10"
+  },
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}

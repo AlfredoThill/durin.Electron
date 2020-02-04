@@ -1,0 +1,24 @@
+<div class='template'>
+    <h2>Formulario de Actualización</h2>
+    <form id="udpate-form" onsubmit='stopUform(event)'>
+        <label for="main-id">ID</label>
+        <input class="form-input" type="text" id="main-id" name="main-id" required>
+        
+        <input type="checkbox" label-id="fname-label" value="fname"> Nombre
+        <input type="checkbox" label-id="lname-label" value="lname"> Apellido
+        <input type="checkbox" label-id="dni-label" value="dni"> DNI
+        <input type="checkbox" label-id="borndate-label" value="borndate"> Fecha de Nacimiento<br>
+        <hr align="center" width="90%">
+
+        <label for="fname" id="fname-label" style="display:none">Nombre</label>
+        <input class="form-input" type="text" id="fname" name="name" style="display:none">
+        <label for="lname" id="lname-label" style="display:none">Apellido</label>
+        <input class="form-input" type="text" id="lname" name="surname" style="display:none">
+        <label for="dni" id="dni-label" style="display:none">DNI</label>
+        <input class="form-input" type="number" id="dni" name="dni" min="4000000" max="50000000" style="display:none"> 
+        <label for="borndate" id="borndate-label" style="display:none">Fecha de Nacimiento</label>
+        <input class="form-input" type="date" id="borndate" name="born_date" min="1900-01-01" style="display:none">
+    
+        <input type="submit" value="Submit">
+    </form>
+</div> 
